@@ -1,0 +1,187 @@
+/* navbar */
+.navbar {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: relative;
+}
+
+/* jumboteron */
+.jumbotron {
+  background-image: url(img/jumbotron-bg.jpg);
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+}
+
+/* info panel */
+.info-panel {
+  background-color: white;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .5);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: -110px;
+}
+
+.info-panel h4 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.info-panel p {
+  font-size: 16px;
+  color: #aeaeae;
+  line-height: 16px;
+}
+
+.info-panel img {
+  float: left;
+  width: 90px;
+  margin-right: 10px;
+}
+
+
+
+.display-4 {
+  text-align: center;
+  color: white;
+  margin-top: 160px;
+  font-weight: 200px;
+  font-size: 40px !important;
+}
+
+.display-4 span {
+  font-weight: bold;
+}
+
+.jumbotron a {
+  margin-top: 40px;
+  padding: 10px 25px;
+  font-weight: bolder;
+}
+
+
+.galeri img {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.galeri h4 {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 40px;
+}
+
+.galeri span {
+  font-weight: bold;
+}
+
+.galeri .tombol {
+  margin-top: 20px;
+}
+
+.ulasan p {
+  text-align: center;
+  font-style: italic;
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ulasan .figure .dua {
+  text-align: center !important;
+  width: 70px;
+  margin: 0 15px 5px;
+  opacity: 0.6;
+}
+
+.ulasan .figure .utama {
+  width: 90px !important;
+  opacity: 1;
+}
+
+.ulasan {
+  text-align: center;
+}
+
+.figure-caption h5 {
+  font-size: 25px;
+  color: black;
+}
+
+.figure-caption p {
+  margin-top: -5px;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  color: #acacac;
+  padding: 50px 0;
+}
+
+
+/* utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px !important;
+}
+
+
+
+/* destop version */
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+    margin: 0 15px;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #007bff;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+
+  .jumbotron {
+    height: 640px;
+    margin-top: -75px;
+  }
+
+  .display-4 {
+    font-size: 60px !important;
+  }
+
+  .galeri h4 {
+    margin-top: 150px;
+  }
+
+
+}
